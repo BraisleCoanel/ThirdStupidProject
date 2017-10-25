@@ -5,11 +5,47 @@ import java.util.Scanner;
 
 public class StupicController
 {
+	private String [] words = { "One", "Two", "Three" };
+	private int [] numbers;
+	
+	public StupicController()
+	{
+		words = new String[5];
+		numbers = new int [10];
+		
+	}
+	
 	public void start()
 	{
-		System.out.println("I like to mess with cards");
+		System.out.println(words);
+		System.out.println(numbers);
 		
-		testScanner();
+		words[0] = "Mama";
+		words[1] = "Mia";
+		words[2] = "Here we";
+		words[3] = "Go";
+		words[4] = "Again";
+		
+		System.out.println(words[0]);
+		System.out.println(words[1]);
+		System.out.println(words[2]);
+		
+		for (String current : words)
+		{
+			System.out.println(current);
+		}
+		
+		for (int index = 0; index < numbers.length; index += 1)
+		{
+			numbers[index] = index + 1;
+			
+			System.out.println(numbers[index]);
+		}
+		
+		words = new String [] {"one", "two", "three", "four", "five" };
+//		System.out.println("I like to mess with cards");
+//		
+//		testScanner();
 	}
 	
 	private void testScanner()
